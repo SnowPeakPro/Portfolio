@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(1, 168, 239);
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    font-size: clamp(1vh, 5vw, 3vh);
+    box-shadow: 0 20px 80px rgba(1, 168, 239, 0.7);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+/* Responsive Navbar Styles */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .navbar a {
+        text-align: center;
+        width: 80%;
+        max-width: 300px;
+        padding: 5px 15px;
+    }
+}
+
+/* Home Section Styles */
+
+.Acceuil {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('/images/backgroundtop\ \(2\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-text {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    color: white;
+    text-shadow: 0 0 3px rgb(1, 168, 239), 0 0 10px rgb(1, 168, 239);
+    margin: 10px 0;
+}
+
+.sub-text {
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: white;
+    text-shadow: 0 0 3px rgb(1, 168, 239), 0 0 10px rgb(1, 168, 239);
+    margin: 10px 10px;
+}
+
+.custom-button {
+    margin-top: 10px;
+    border: 2px solid rgb(1, 168, 239);
+    border-radius: 15px;
+    background-color: transparent;
+    color: rgb(1, 168, 239);
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: rgb(1, 168, 239);
+    color: white;
+}
+
+/* Profile Section Styles */
+
+.Profil {
+    background-color: black;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre_a_propos {
+    font-size: 2rem;
+    color: rgb(1, 168, 239);
+    margin-bottom: 10px;
+}
+
+.image_a_propos {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.description_a_propos {
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+    padding: 0 20vh;
+}
+
+.description_a_propos span {
+    color: rgb(1, 168, 239);
+}
+
+/* Responsive Profile Styles */
+
+@media (max-width: 768px) {
+    .Profil {
+        background-color: black;
+        height: clamp(100vh, 125vh, 200vh);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description_a_propos {
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: whitesmoke;
+        padding: 0 30px;
+    }
+}
+
+/* Situation Section Styles */
+
+.Situation {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('/images/Cybersecurite.png');
+    background-position: center;
+    background-attachment: fixed;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+    width: 100%;
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+/* Skills Section Styles */
+
+.Compétences {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.competences {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bac {
+    color : white
+    
+}
+
+.imageee{
+    width: 90%;
+}
+.bac2{
+    margin-top : 50px ; 
+}
+
+.competences h2 {
+    margin-bottom: 20px;
+    color: rgb(1, 168, 239);
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.skill label {
+    width: 70px;
+    font-weight: bold;
+}
+
+.skill input[type="range"] {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.skill span {
+    width: 30px;
+    text-align: center;
+}
+
+.cv {
+    width: 45%;
+    text-align: center;
+}
+
+.cv h2 {
+    margin-bottom: 20px;
+    color: rgb(1, 168, 239);
+}
+
+.cv-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgb(1, 168, 239);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Skills Styles */
+
+@media (max-width: 768px) {
+    .Compétences {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competences, .cv {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .competences h2, .cv h2 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
+    .cv-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Transition Section Styles */
+
+.Transition {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('/images/transitionimage.png');
+    background-position: center;
+    background-attachment: fixed;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+    width: 100%;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+/* Citation Section Styles */
+
+.Citation {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.Citation span {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+
+
+
+
+
+
+/* Projects Section Styles */
+
+.Projets {
+    background-color: black; 
+    height: 500px;
+    width: 100%;
+}
+
+.Projets {
+    display: flex;
+    justify-content: center; /* Centre les rectangles horizontalement */
+    gap: 80px; /* Espacement horizontal entre les rectangles */
+    padding: 20px; /* Ajoute un écart entre les bords et les rectangles */
+    flex-wrap: wrap; /* Permet de passer sur une nouvelle ligne si l'écran est trop petit */
+}
+
+.rectangle {
+    width: 200px;
+    background-color:whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Permet aux rectangles de s'adapter à la largeur disponible */
+    max-width: 250px; /* Empêche les rectangles de devenir trop larges */
+}
+
+.rectangle h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.rectangle p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Section Styles */
+
+.Contact {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+.Contact h2 {
+    padding-top: 10vh;
+    color: white; /* Assure la visibilité du titre */
+}
+
+/* Container avec boutons alignés horizontalement */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les boutons */
+    margin: 20px;
+}
+
+/* Boutons de style carré */
+.icon-button {
+    width: 100px;
+    height: 100px;
+    background-color: #0073b1; /* Couleur par défaut (LinkedIn bleu) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden; /* Assure que l'image reste dans les limites */
+}
+
+.icon-button:hover {
+    background-color: #005582; /* Couleur plus foncée au survol */
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+/* Style des images utilisées comme boutons */
+.button-icon {
+    width: 100%;
+    height: 100%;
+}
+.button-icon2 {
+    width: 150%;
+    height: 150%;
+}
+
+/* Section email */
+#email-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#email-section.hidden {
+    display: none;
+}
+
+#email-text {
+    font-size: 16px;
+    color: white; /* Assure la lisibilité */
+}
+
+/* Texte masqué */
+.hidden {
+    display: none;
+}
