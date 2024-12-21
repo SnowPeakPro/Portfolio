@@ -60,7 +60,7 @@ body {
 
 .Acceuil {
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-        url('/images/backgroundtop\ \(2\).jpg');
+        url('images/backgroundtop\ \(2\).jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ body {
 
 .Situation {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url('/images/Cybersecurite.png');
+        url('images/Cybersecurite.png');
     background-position: center;
     background-attachment: fixed;
     height: 200px;
@@ -311,7 +311,7 @@ button:hover {
 
 .Transition {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url('/images/transitionimage.png');
+        url('images/transitionimage.png');
     background-position: center;
     background-attachment: fixed;
     height: 200px;
