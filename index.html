@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,23 +9,30 @@
 <body>
 <div class="barre_top">
     <nav class="navbar">
-        <a href="#Acceuil">Acceuil</a>
-        <a href="#Profil">Profil</a>
-        <a href="#Compétences">Compétences</a>
-        <a href="#Projets">Projets</a>
-        <a href="#Contact">Contact</a>
+        <a href="#Acceuil" data-en="Home">Acceuil</a>
+        <a href="#Profil" data-en="Profile">Profil</a>
+        <a href="#Compétences" data-en="Skills">Compétences</a>
+        <a href="#Projets" data-en="Projects">Projets</a>
+        <a href="#Contact" data-en="Contact">Contact</a>
+        <button id="language-toggle">English</button>
     </nav>
 </div>
 <div class="Acceuil" id="Acceuil">
-    <h1 class="main-text">Loïc VIDAL-FERRASSE</h1>
-    <p class="sub-text">Etudiants en Réseaux et télécommunications 1</p>
-    <a class="custom-button" href="#Profil">Plus d'infos</a>
+    <h1 class="main-text" data-en="Loïc VIDAL-FERRASSE">Loïc VIDAL-FERRASSE</h1>
+    <p class="sub-text" data-en="Student in Networks and Telecommunications 1">Etudiants en Réseaux et télécommunications 1</p>
+    <a class="custom-button" href="#Profil" data-en="More info">Plus d'infos</a>
 </div>
 <div class="Profil" id="Profil">
-        <h1 class="titre_a_propos">À propos de moi</h1>
+        <h1 class="titre_a_propos" data-en="About Me">À propos de moi</h1>
         <img class="image_a_propos" src="images/imagetempo.jpg" alt="Image descriptive">
-        <p class="description_a_propos">
-        Bonjour, <br> <br>
+        <p class="description_a_propos" data-en="Hello, <br> <br>
+        I am currently <span>a student in Networks and Telecommunications</span>
+        at the IUT of Béziers, where I develop my technical and practical skills
+        in this evolving field. Naturally curious, logical, and pragmatic, I am
+        passionate about solving complex problems and technological innovation. <br> <br>
+        My goal is to deepen my knowledge and gain hands-on experience through <span>an internship in a specialized company</span>.
+        I am motivated to actively contribute to your projects while continuing to <span>train for challenges in networks and cybersecurity</span>. <br> <br>
+        Feel free to <span>contact me</span> to discuss further!">Bonjour, <br> <br>
         Je suis actuellement <span>étudiant en Réseaux et Télécommunications
         à l'IUT de Béziers</span>, où je développe mes compétences techniques 
         et pratiques dans ce domaine en pleine évolution.
@@ -43,85 +48,85 @@
         </p>
 </div>
 <div class="Situation" id="Situation">
-    <p><b>Actuellement : </b><br><br>
+    <p data-en="Currently: <br><br>Looking for an internship starting in September 2025"><b>Actuellement : </b><br><br>
     En recherche d'alternance à partir de Septembre 2025</p>
 </div>
 <div class="Compétences" id="Compétences">
             <!-- Compétences -->
         <div class="competences">
-            <h2>Mes Compétences</h2>
+            <h2 data-en="My Skills">Mes Compétences</h2>
 
-            <h2>Programmation</h2>
+            <h2 data-en="Programming">Programmation</h2>
             <div class="skill">
-                <label for="html">Python</label>
+                <label for="html" data-en="Python">Python</label>
                 <input type="range" id="html" min="0" max="100" value="80" disabled>
                 <span>80%</span>
             </div>
             <div class="skill">
-                <label for="css">CSS</label>
+                <label for="css" data-en="CSS">CSS</label>
                 <input type="range" id="css" min="0" max="100" value="70" disabled>
                 <span>70%</span>
             </div>
             <div class="skill">
-                <label for="python">HTML</label>
+                <label for="python" data-en="HTML">HTML</label>
                 <input type="range" id="python" min="0" max="100" value="70" disabled>
                 <span>70%</span>
             </div>
-            <h2 class="bac2">Mes Diplômes</h2>
-            <div class="bac"><p>J'ai obtenu mon baccalauréat général en 2023 avec la mention bien , j'avais les spécialités
+            <h2 class="bac2" data-en="My Degrees">Mes Diplômes</h2>
+            <div class="bac"><p data-en="I obtained my general baccalaureate in 2023 with honors, specializing in NSI, Mathematics, and Physics-Chemistry in the first year, along with the Expert Mathematics and Engineering Science options.">J'ai obtenu mon baccalauréat général en 2023 avec la mention bien , j'avais les spécialités
                 NSI , Mathématiques et physique-chimie en première , ainsi que l'option Maths Expertes et Science de l'ingénieur 
             </p></div>
-            <h2 class="bac2">Mes Certifications</h2>
+            <h2 class="bac2" data-en="My Certifications">Mes Certifications</h2>
             <div><img src="/images/anssi.png" class="imageee" > </div>
 
         </div>
 
         <!-- Section CV -->
         <div class="cv">
-            <h2>Mon CV</h2>
+            <h2 data-en="My Resume">Mon CV</h2>
             <img src="/images/CV professionnel COULEUR-1.png" alt="Mon CV" class="cv-image">
             <a href="/images/CV professionnel COULEUR-1.png" download>
-                <button class="custom-button">Télécharger mon CV</button>
+                <button class="custom-button" data-en="Download my Resume">Télécharger mon CV</button>
             </a>
         </div>
 </div>
 <div class="Transition" id="Transition">
     <div class="Citation">
-        <p>« L'action est la clé fondamentale de tout succès. » <br><br><span><b>Pablo Picasso</b></span></p>
+        <p data-en="Action is the foundational key to all success. <br><br><span><b>Pablo Picasso</b></span>">« L'action est la clé fondamentale de tout succès. » <br><br><span><b>Pablo Picasso</b></span></p>
     </div>
 </div>
 <div class="Projets" id="Projets">
     <div class="rectangle">
-        <h1>SAE 11</h1>
-        <p>Cette SAE Se sensibiliser à l'hygiène informatique et à la cybersécurité m'a permis 
+        <h1 data-en="SAE 11">SAE 11</h1>
+        <p data-en="This SAE involved raising awareness of computer hygiene and cybersecurity. I gained knowledge about different types of threats, particularly cyberbullying, which was my assigned theme! I learned video editing and improved my English through oral presentations.">Cette SAE Se sensibiliser à l'hygiène informatique et à la cybersécurité m'a permis 
             d'acquérir des connaissances sur les différents types de menaces , notamment sur le cyberharcèlement qui 
             était mon thème imposé ! J'ai appris à faire du montage vidéo , et améliorer mon anglais via l'oral de présentation
         </p>
     </div>
     <div class="rectangle">
-        <h1>SAE 13</h1>
-        <p>Cette SAE Découvrir un dispositif de transmission m'a permis de mettre en pratique mes connaissances sur les câbles ,
+        <h1 data-en="SAE 13">SAE 13</h1>
+        <p data-en="This SAE focused on discovering a transmission device and allowed me to apply my knowledge about cables. I learned to certify cables, use the DSX, conduct transmission tests, verify cable integrity, and validate it through complex calculations.">Cette SAE Découvrir un dispositif de transmission m'a permis de mettre en pratique mes connaissances sur les câbles ,
             j'ai appris à certifier des câbles , à utiliser le DSX et à faire des tests de transmission , vérifier l'intégrité d'un câble  
             et le vérifier via des calculs complexes
         </p>
     </div>
     <div class="rectangle">
-        <h1>SAE 14</h1>
-        <p>Cette SAE Se présenter sur Internet , m'a aider à développer une meilleur image de moi sur internet , de 
+        <h1 data-en="SAE 14">SAE 14</h1>
+        <p data-en="This SAE helped me develop a better online image of myself, build a LinkedIn network, discover different career options by communicating with alumni, and even improve my HTML and CSS skills by creating this website from scratch.">Cette SAE Se présenter sur Internet , m'a aider à développer une meilleur image de moi sur internet , de 
             me créer un réseau sur linkedin , de découvrir les différentes options pour mon avenir en communiquant avec d'anciens élèves
             et même d'améliorer mes compétences en HTML et CSS en créant ce site à la main !
         </p>
     </div>
     <div class="rectangle">
-        <h1>SAE 15</h1>
-        <p>Cette SAE Traiter des données , même si pas encore terminée m'a permis d'apprendre de nouvelle librairie en 
+        <h1 data-en="SAE 15">SAE 15</h1>
+        <p data-en="This ongoing SAE taught me new libraries to collect data from a website, synthesize it, and present it in a clear and understandable way for anyone.">Cette SAE Traiter des données , même si pas encore terminée m'a permis d'apprendre de nouvelle librairie en 
             afin de récolter des informations sur un site web , de les synthétiser et de les présenter de manière claire et compréhensible
             pour une personne quelconques ! 
         </p>
     </div>
 </div>
 <div class="Contact" id="Contact">
-    <h2>Contactez-Moi</h2>
+    <h2 data-en="Contact Me">Contactez-Moi</h2>
     <div class="contact-container">
         <!-- Bouton pour afficher l'email -->
         <button id="show-email" class="icon-button">
@@ -159,9 +164,21 @@
         document.getElementById('linkedin-button').addEventListener('click', () => {
             window.open('https://www.linkedin.com/in/loicvidalferrasse/', '_blank');
         });
+
+        // Toggle language button
+        const toggleButton = document.getElementById('language-toggle');
+        const translatableElements = document.querySelectorAll('[data-en]');
+
+        toggleButton.addEventListener('click', () => {
+            const isEnglish = toggleButton.textContent === 'English';
+            toggleButton.textContent = isEnglish ? 'Français' : 'English';
+
+            translatableElements.forEach(element => {
+                const originalText = element.innerHTML;
+                element.innerHTML = isEnglish ? element.getAttribute('data-en') : originalText;
+                element.setAttribute('data-en', originalText);
+            });
+        });
     </script>
-    
-    
-</div>
 </body>
 </html>
