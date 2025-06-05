@@ -346,33 +346,34 @@ button:hover {
 /* Projects Section Styles */
 
 .Projets {
-    background-color: black; 
-    height: 500px;
+    background-color: black;
     width: 100%;
-}
-
-.Projets {
-    display: flex;
-    justify-content: center; /* Centre les rectangles horizontalement */
-    gap: 80px; /* Espacement horizontal entre les rectangles */
-    padding: 20px; /* Ajoute un écart entre les bords et les rectangles */
-    flex-wrap: wrap; /* Permet de passer sur une nouvelle ligne si l'écran est trop petit */
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-items: center;
 }
 
 .rectangle {
-    width: 200px;
-    background-color:whitesmoke;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #ffffff, #e6e6e6);
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Permet aux rectangles de s'adapter à la largeur disponible */
-    max-width: 250px; /* Empêche les rectangles de devenir trop larges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.rectangle:hover {
+    transform: translateY(-10px);
 }
 
 .rectangle h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 10px;
+    color: rgb(1, 168, 239);
 }
 
 .rectangle p {
