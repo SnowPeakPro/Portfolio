@@ -464,3 +464,17 @@ button:hover {
 .hidden {
     display: none;
 }
+
+/* Test Section Styles */
+.Test {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
