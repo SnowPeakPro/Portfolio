@@ -96,33 +96,53 @@
     </div>
 </div>
 <div class="Projets" id="Projets">
-    <div class="rectangle">
+    <div class="sae-card" data-modal="modal11">
+        <img src="images/imagetempo.jpg" alt="SAE 11">
         <h1 data-en="SAE 11">SAE 11</h1>
-        <p data-en="This SAE involved raising awareness of computer hygiene and cybersecurity. I gained knowledge about different types of threats, particularly cyberbullying, which was my assigned theme! I learned video editing and improved my English through oral presentations.">Cette SAE Se sensibiliser à l'hygiène informatique et à la cybersécurité m'a permis 
-            d'acquérir des connaissances sur les différents types de menaces , notamment sur le cyberharcèlement qui 
-            était mon thème imposé ! J'ai appris à faire du montage vidéo , et améliorer mon anglais via l'oral de présentation
-        </p>
+        <p data-en="Awareness of cybersecurity, video editing and English.">Sensibilisation à la cybersécurité, montage vidéo et anglais.</p>
     </div>
-    <div class="rectangle">
+    <div class="sae-card" data-modal="modal13">
+        <img src="images/imagetempo.jpg" alt="SAE 13">
         <h1 data-en="SAE 13">SAE 13</h1>
-        <p data-en="This SAE focused on discovering a transmission device and allowed me to apply my knowledge about cables. I learned to certify cables, use the DSX, conduct transmission tests, verify cable integrity, and validate it through complex calculations.">Cette SAE Découvrir un dispositif de transmission m'a permis de mettre en pratique mes connaissances sur les câbles ,
-            j'ai appris à certifier des câbles , à utiliser le DSX et à faire des tests de transmission , vérifier l'intégrité d'un câble  
-            et le vérifier via des calculs complexes
-        </p>
+        <p data-en="Transmission device discovery and cable certification.">Découverte d'un dispositif de transmission et certification de câbles.</p>
     </div>
-    <div class="rectangle">
+    <div class="sae-card" data-modal="modal14">
+        <img src="images/imagetempo.jpg" alt="SAE 14">
         <h1 data-en="SAE 14">SAE 14</h1>
-        <p data-en="This SAE helped me develop a better online image of myself, build a LinkedIn network, discover different career options by communicating with alumni, and even improve my HTML and CSS skills by creating this website from scratch.">Cette SAE Se présenter sur Internet , m'a aider à développer une meilleur image de moi sur internet , de 
-            me créer un réseau sur linkedin , de découvrir les différentes options pour mon avenir en communiquant avec d'anciens élèves
-            et même d'améliorer mes compétences en HTML et CSS en créant ce site à la main !
-        </p>
+        <p data-en="Online presence and website creation.">Présence en ligne et création de site web.</p>
     </div>
-    <div class="rectangle">
+    <div class="sae-card" data-modal="modal15">
+        <img src="images/imagetempo.jpg" alt="SAE 15">
         <h1 data-en="SAE 15">SAE 15</h1>
-        <p data-en="This ongoing SAE taught me new libraries to collect data from a website, synthesize it, and present it in a clear and understandable way for anyone.">Cette SAE Traiter des données , même si pas encore terminée m'a permis d'apprendre de nouvelle librairie en 
-            afin de récolter des informations sur un site web , de les synthétiser et de les présenter de manière claire et compréhensible
-            pour une personne quelconques ! 
-        </p>
+        <p data-en="Data processing with new libraries.">Traitement de données avec de nouvelles librairies.</p>
+    </div>
+</div>
+<div id="modal11" class="modal">
+    <div class="modal-content">
+        <h2 data-en="SAE 11">SAE 11</h2>
+        <p data-en="This SAE involved raising awareness of computer hygiene and cybersecurity. I gained knowledge about different types of threats, particularly cyberbullying, which was my assigned theme! I learned video editing and improved my English through oral presentations.">Cette SAE Se sensibiliser à l'hygiène informatique et à la cybersécurité m'a permis d'acquérir des connaissances sur les différents types de menaces, notamment sur le cyberharcèlement qui était mon thème imposé ! J'ai appris à faire du montage vidéo, et améliorer mon anglais via l'oral de présentation</p>
+        <button class="modal-close" data-en="Close">Fermer</button>
+    </div>
+</div>
+<div id="modal13" class="modal">
+    <div class="modal-content">
+        <h2 data-en="SAE 13">SAE 13</h2>
+        <p data-en="This SAE focused on discovering a transmission device and allowed me to apply my knowledge about cables. I learned to certify cables, use the DSX, conduct transmission tests, verify cable integrity, and validate it through complex calculations.">Cette SAE Découvrir un dispositif de transmission m'a permis de mettre en pratique mes connaissances sur les câbles, j'ai appris à certifier des câbles, à utiliser le DSX et à faire des tests de transmission, vérifier l'intégrité d'un câble et le vérifier via des calculs complexes</p>
+        <button class="modal-close" data-en="Close">Fermer</button>
+    </div>
+</div>
+<div id="modal14" class="modal">
+    <div class="modal-content">
+        <h2 data-en="SAE 14">SAE 14</h2>
+        <p data-en="This SAE helped me develop a better online image of myself, build a LinkedIn network, discover different career options by communicating with alumni, and even improve my HTML and CSS skills by creating this website from scratch.">Cette SAE Se présenter sur Internet m'a aidé à développer une meilleure image de moi sur internet, me créer un réseau sur LinkedIn, découvrir les différentes options pour mon avenir en communiquant avec d'anciens élèves et même d'améliorer mes compétences en HTML et CSS en créant ce site à la main !</p>
+        <button class="modal-close" data-en="Close">Fermer</button>
+    </div>
+</div>
+<div id="modal15" class="modal">
+    <div class="modal-content">
+        <h2 data-en="SAE 15">SAE 15</h2>
+        <p data-en="This ongoing SAE taught me new libraries to collect data from a website, synthesize it, and present it in a clear and understandable way for anyone.">Cette SAE Traiter des données, même si pas encore terminée m'a permis d'apprendre de nouvelle librairie afin de récolter des informations sur un site web, de les synthétiser et de les présenter de manière claire et compréhensible pour une personne quelconque !</p>
+        <button class="modal-close" data-en="Close">Fermer</button>
     </div>
 </div>
 <div class="Contact" id="Contact">
@@ -177,6 +197,30 @@
                 const originalText = element.innerHTML;
                 element.innerHTML = isEnglish ? element.getAttribute('data-en') : originalText;
                 element.setAttribute('data-en', originalText);
+            });
+        });
+
+        // Gestion des modales pour les SAE
+        document.querySelectorAll('.sae-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const modalId = card.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = 'flex';
+                }
+            });
+        });
+
+        document.querySelectorAll('.modal-close').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                btn.closest('.modal').style.display = 'none';
+            });
+        });
+
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', () => {
+                modal.style.display = 'none';
             });
         });
     </script>

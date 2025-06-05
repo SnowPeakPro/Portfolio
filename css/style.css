@@ -346,39 +346,67 @@ button:hover {
 /* Projects Section Styles */
 
 .Projets {
-    background-color: black; 
-    height: 500px;
+    background-color: black;
     width: 100%;
-}
-
-.Projets {
-    display: flex;
-    justify-content: center; /* Centre les rectangles horizontalement */
-    gap: 80px; /* Espacement horizontal entre les rectangles */
-    padding: 20px; /* Ajoute un écart entre les bords et les rectangles */
-    flex-wrap: wrap; /* Permet de passer sur une nouvelle ligne si l'écran est trop petit */
-}
-
-.rectangle {
-    width: 200px;
-    background-color:whitesmoke;
-    border-radius: 8px;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.sae-card {
+    width: 200px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Permet aux rectangles de s'adapter à la largeur disponible */
-    max-width: 250px; /* Empêche les rectangles de devenir trop larges */
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
-.rectangle h1 {
-    font-size: 1.5em;
+.sae-card:hover {
+    transform: scale(1.05);
+}
+
+.sae-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
     margin-bottom: 10px;
 }
 
-.rectangle p {
-    font-size: 1em;
-    color: #555;
-    margin: 0;
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-close {
+    margin-top: 10px;
+    background-color: rgb(1, 168, 239);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 
