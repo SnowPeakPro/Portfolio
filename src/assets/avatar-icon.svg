@@ -1,0 +1,18 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  fill="none"
+  stroke="#0ea5e9"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Outline of the avatar head -->
+  <circle cx="32" cy="24" r="12" fill="#0f172a" stroke="#0ea5e9" />
+  <!-- Shoulders -->
+  <path
+    d="M16 52c0-8.84 7.16-16 16-16s16 7.16 16 16"
+    fill="#0f172a"
+    stroke="#0ea5e9"
+  />
+</svg>
